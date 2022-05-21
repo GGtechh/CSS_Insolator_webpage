@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="https://kit.fontawesome.com/869fb81d46.js" crossorigin="anonymous"></script>
+        <title>INSULATOR</title>
+        <style>
+            .content-table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.9em;
+                min-width: 400px;
+                border-radius: 5px 5px 0 0;
+                overflow: hidden;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+              }
+              
+              .content-table thead tr {
+                background-color: #009879;
+                color: #ffffff;
+                text-align: left;
+                font-weight: bold;
+              }
+              
+              .content-table th,
+              .content-table td {
+                padding: 12px 15px;
+              }
+              
+              .content-table tbody tr {
+                border-bottom: 1px solid #dddddd;
+              }
+              
+              .content-table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+              }
+              
+              .content-table tbody tr:last-of-type {
+                border-bottom: 2px solid #009879;
+              }
+              
+              .content-table tbody tr.active-row {
+                font-weight: bold;
+                color: #009879;
+              }
+        </style>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">INSULATORM</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link active-link">หน้าแรก</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">รายละเอียดสินค้า</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">คุณสมบัติของฉนวนความร้อน</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">คุณสมบัติทางเคมีและฟิสิกส์</a></li>
+                        <!-- <li class="nav__item"><a href="#contact" class="nav__link">คุณสมบัติทางเคมีและฟิสิกส์</a></li> -->
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <!-- <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">ฉนวนความร้อน</h1>
+                        <h5 class="home__subtitle">การปกความร้อน <br> การพาความร้อน <br>การแผ่รังสีความร้อน (UV)</h5>
+                        <a href="#" class="button">View Menu</a>
+                    </div>
+    
+                    <img src="assets/img/home.png" alt="" class="home__img">
+                </div>
+            </section> -->
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">รายละเอียดสินค้า</span>
+                        <h2 class="section-title about__initial">ฉนวนความร้อน <br></h2>
+                        <p class="about__description">ฉนวนความร้อนประสิทธิภาพสูง ผ่านกระบวนการ ผลิตด้วยเทคโนโลยีทันสมัย ในการประสาน Metalized Film เข้ากับฉนวนโพลีเอทธีลีนโฟม (Non-Crosslinked Polyethylene Foam) ที่มีค่าการนําความร้อนต่ํา เพียง 0.029 W/mk. (ASTM c-177) ด้วยระบบ 
+                            Dry Laminate เคลือบผิวด้วยพลาสติกฟิล์ม P.E.L. (Polyethylene Terephthalate) ทําให้ผิวของฉนวน มีความคงทนต่อรอยขีดข่วน อีกทั้ง ยังทนต่อสภาพอากาศ และความชื้นได้เป็นอย่างดี </p>
+                        <!-- <a href="#" class="button">ดูเพิ่มเติม</a> -->
+                    </div>
+
+                    <img src="assets/img/about.png" alt="" class="about__img">
+                </div>
+            </section>
+
+            <!--========== SERVICES ==========-->
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">คุณสมบัติของฉนวนความร้อน</span>
+                <h2 class="section-title">คุณสมบัติของฉนวนความร้อน</h2>
+
+                <div class="services3__container  bd-grid">
+                    <div class="services3__content">
+                        <i class='bx bx-shield-alt-2' style="font-size: 60px;color:#069C54;"></i>
+                        <h3 class="services__title">ป้องกันความร้อนสมบูรณ์แบบ</h3>
+                        <p class="services__description">แผ่น Metalized film ผสานเข้ากับ ฉนวนโพลีเอทธีลีนโฟมเพิ่มประสิทธิภาพ การป้องกันส่งผ่านความร้อน</p>
+                    </div>
+
+                    <div class="services3__content">
+                        <i class='bx bx-money' style="font-size: 60px;color:#069C54;"></i>
+                        <h3 class="services__title">ช่วยประหยัดพลังงานไฟฟ้า</h3>
+                        <p class="services__description">ตัวฉนวนป้องกันไม่ให้ความร้อนผ่านเข้ามา จึงสามารถรักษาความคงที่ของอุณหภูมิ ภายในห้องได้ ช่วยในการประหยัดพลังงาน ของเครื่องปรับอากาศ ทําให้ประหยัดค่าไฟฟ้า ได้มากกว่า 40% </p>
+                    </div>
+
+                    <div class="services3__content">
+                        <i class='bx bx-atom' style="font-size: 60px;color:#069C54;"></i>
+                        <h3 class="services__title">เซลล์ปิด 100%</h3>
+                        <p class="services__description">โครงสร้างมีลักษณะเป็นฟองอากาศขนาดเล็ก เกาะเกี่ยวกันอยู่อย่างหนาแน่น ทําให้มีลักษณะ เป็นฉนวนเซลล์ปิด 100% (Closed-cell) ซึ่งเป็นคุณสมบัติของฉนวนความร้อนที่ดี </p>
+                    </div>
+
+                    <div class="services3__content">
+                        <i class='bx bx-headphone' style="font-size: 60px;color:#069C54;"></i>
+                        <h3 class="services__title">ป้องกันการส่งผ่านของเสียง</h3>
+                        <p class="services__description">โครงสร้างของฉนวนเป็นอนฟองอากาศ ขนาดเล็กเรียงตัวกันอย่างหนาแน่น ช่วยป้องกัน การส่งผ่านของคลื่นเสียงได้ เป็นอย่างดี</p>
+                    </div>
+
+                    <div class="services3__content">
+                        <i class="fa-solid fa-toolbox" style="font-size: 60px;color:#069C54;"></i>
+                        <h3 class="services__title">ติดตั้งสะดวกรวดเร็ว น้ำหนักเบา</h3>
+                        <p class="services__description">โครงสร้างมีความยืดหยุ่นสูง น้ําหนักเบา จึงทําให้การติดตั้งเป็นไปอย่างสะดวกรวดเร็ว ไม่ว่าจะเป็นงานหลังคา ฝ้า เพดาน งานพนัง และบานพื้น</p>
+                    </div>
+
+                    <div class="services3__content">
+                        <i class="fas fa-biohazard" style="font-size: 60px;color:#069C54;"></i>
+                        <h3 class="services__title">ปลอดภัยไม่เป็นพิษต่อสภาพแวดล้อม</h3>
+                        <p class="services__description">วัสดุของตัวฉนวนผลิตจาก PE ที่เป็นพลาสติก ที่ใช้ในการผลิตถุงน้ําเกลือ หลอดฉีดยา ในวงการแพทย์ ไม่มีส่วนประกอบที่เป็น อันตรายต่อมนุษย์และสิ่งแวดล้อม</p>
+                    </div>
+
+                    <div class="services3__content">
+                        <i class='bx bx-water' style="font-size: 60px;color:#069C54;"></i>
+                        <h3 class="services__title">ไม่ดูดซับความชื้น</h3>
+                        <p class="services__description">ไม่ดูดซับความชื้น โครงสร้างเป็นเซลล์ปิด 100% มีคุณสมบัติ ในการทํานทานการดูดซึมน้ํา และความชื้น เข้ามายังตัวฉนวน ซึ่งจะไม่ทําให้น้ําหนัก และ ประสิทธิภาพของฉนวนเปลี่ยนแปลง</p>
+                    </div>
+
+                    <div class="services3__content">
+                        <i class='bx bx-time-five' style="font-size: 60px;color:#069C54;"></i>
+                        <!-- <i class='bx bxs-truck bx-tada bx-rotate-90' ></i> -->
+                        <h3 class="services__title">อายุการใช้งานคงทนถาวร</h3>
+                        <p class="services__description">ตัวฉนวนถูกออกแบบมาให้มีความคงทนต่อ สภาวะอากาศในประเทศแถบร้อนชื้น จึงสามารถ คงความเป็นฉนวนยาวนานนับ 10 ปี</p>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!--===== ddd =======-->
+            <section class="services section bd-container" id="menu">
+                <span class="section-subtitle">คุณสมบัติทางเคมีและฟิสิกส์</span>
+                <h2 class="section-title">คุณสมบัติทางเคมีและฟิสิกส์</h2>
+                <center>
+                <table class="content-table" >
+                    <thead>
+                      <tr>
+                        <th>คุณสมบัติ</th>
+                        <th>ผลการทดสอบ</th>
+                        <th>มาตรฐานอ้างอิง</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>โครงสร้างเซลล์<br>Cell Structure</td>
+                        <td>Closed Cell</td>
+                        <td></td>
+                      </tr>
+                      <tr class="active-row">
+                        <td>ความหนาแน่น<br>Density</td>
+                        <td>41 - 50 kg/m3</td>
+                        <td>IS0 845</td>
+                      </tr>
+                      <tr>
+                        <td>การนําความร้อน<br>Themal Conductivity</td>
+                        <td>0.029 W/m.k.</td>
+                        <td>ASTM C 177</td>
+                      </tr>
+                      <tr class="active-row">
+                        <td>การดูดซึมน้ํา<br>Water Absorption</td>
+                        <td>0%</td>
+                        <td>JIS K 6767</td>
+                      </tr>
+                      <tr>
+                        <td>ความคงสภาพของมิติ<br>Physical Stability</td>
+                        <td>+- 0.5</td>
+                        <td>TISI 1384-2539</td>
+                      </tr>
+                      <tr class="active-row">
+                        <td>ความคงทนต่อโอโซน<br>Concentrated Ozone Stability</td>
+                        <td>No Crack</td>
+                        <td>ASTM D 1171 (Method A)</td>
+                      </tr>
+                      <tr>
+                        <td>ความคงทนต่อสารเคมี<br>Chemicals Resistance</td>
+                        <td>No Crack</td>
+                        <td>ASTM D 1308</td>
+                      </tr>
+                      <tr class="active-row">
+                        <td>การเกิดก๊าซพิษ<br>Chemicals Resistance</td>
+                        <td>Non Toxicity</td>
+                        <td>Ref. Mat. PE-Foam</td>
+                      </tr>
+                      <tr>
+                        <td>ลักษณะการติดไฟ<br>Flammability</td>
+                        <td>Self extinguishing (HF-2)</td>
+                        <td>UL 94</td>
+                      </tr>
+                      <tr class="active-row">
+                        <td>ค่าการต้านทานแรงกด<br>Compression Strength</td>
+                        <td>0.30 - 0.40 kgf/cm2</td>
+                        <td>ASTM D 642</td>
+                      </tr>
+                      <tr>
+                        <td>กําลังต้านทานการดึง<br>Tensile Strength</td>
+                        <td>2.0 - 3.5 kgf/cm2</td>
+                        <td>ASTM D 882</td>
+                      </tr>
+                      <tr class="active-row">
+                        <td>ค่าการต้านทานรังสี U.V.<br>U.V. Resistance </td>
+                        <td>Excellent with paint</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>อุณหภูมิการใช้งาน<br>Heat Distortion Temperature </td>
+                        <td>-85°C 85°C</td>
+                        <td></td>
+                      </tr>
+                      <tr class="active-row">
+                        <td>อายุการใช้งาน<br>Working Life</td>
+                        <td>+15 years</td>
+                        <td></td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </center>
+                
+            </section>
+            
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container" id="contact">
+          <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">INSULATOR</a>
+                <!-- <span class="footer__description">Restaurant</span> -->
+                <div>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">บริการ</h3>
+                <ul>
+                    <!-- <li><a href="#" class="footer__link">สำรวจพื้นที่</a></li>
+                    <li><a href="#" class="footer__link">ผลิตฉนวน</a></li>
+                    <li><a href="#" class="footer__link">ติดตั้ง</a></li> -->
+                    <li>สำรวจพื้นที่</li>
+                    <li>ผลิตฉนวน</li>
+                    <li>ติดตั้ง</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">สินค้า</h3>
+                <ul>
+                    <li><a href="product.html" class="footer__link">ฉนวนความร้อน</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">ที่อยู่</h3>
+                <ul>
+                    <li>จีจีเทค 277/4 หมู่11 ตําบล</li>
+                    <li>หัวขวาง อําเภอโกสุมพิสัย</li>
+                    <li>จังหวัดมหาสารคาม 44140</li>
+                    <!-- <li>999 - 888 - 777</li> -->
+                    <li>ggtech.technology@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2022 GGTECH. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
